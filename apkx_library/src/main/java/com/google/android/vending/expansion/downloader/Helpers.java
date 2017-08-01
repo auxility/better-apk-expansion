@@ -22,6 +22,7 @@ import android.os.Build;
 import android.os.Environment;
 import android.os.StatFs;
 import android.os.SystemClock;
+import android.support.annotation.StringRes;
 import android.util.Log;
 import com.android.vending.expansion.downloader.R;
 
@@ -313,6 +314,7 @@ public class Helpers {
      * @param state One of the STATE_* constants from {@link IDownloaderClient}.
      * @return string resource ID for the corresponding string.
      */
+    @StringRes
     static public int getDownloaderStringResourceIDFromState(int state) {
         switch (state) {
             case IDownloaderClient.STATE_IDLE:
