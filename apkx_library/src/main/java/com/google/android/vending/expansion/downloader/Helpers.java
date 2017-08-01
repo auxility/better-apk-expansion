@@ -267,7 +267,7 @@ public class Helpers {
      *
      * @param c the app/activity/service context
      * @param fileName the name (sans path) of the file to query
-     * @return true if it does exist, false otherwise
+     * @return value representing whether the file exists and is readable
      */
     static public int getFileStatus(Context c, String fileName) {
         // the file may have been delivered by Play --- let's make sure
